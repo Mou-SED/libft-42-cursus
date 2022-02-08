@@ -1,5 +1,5 @@
 
-<div style="text-align: center;">
+<div align="center">
 <img src="https://gitlab.com/uploads/-/system/project/avatar/10815567/libft.png">
 </div>
 
@@ -62,7 +62,7 @@ This project gives the opportunity to recode functions that already exist in dif
 - [`ft_strmapi`](https://github.com/Mou-SED/libft-42-cursus/blob/updating/src/ft_strmapi.c) ~ create new string from modifying string with specified function.
 - [`ft_striteri`](https://github.com/Mou-SED/libft-42-cursus/blob/updating/src/ft_striteri.c) ~ modify the string with the specified function if necessary. using the current character address.
 
-<h3 style="text-align: center;">Bonus Part</h3>
+<h3 align="center">Bonus Part</h3>
 
 ## Linked list functions
 
