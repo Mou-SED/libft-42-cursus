@@ -104,7 +104,7 @@ To use libft in your code, you must add the include header to your code :
 and add the libft folder to your directory and when you compile your code, just link it like this:
 
 ```c
-gcc your file .c -lft -L path/to/libft.a -I path/to/libft.h
+gcc your "file .c" -lft -L path/to/libft.a -I path/to/libft.h
 ```
 
 # > Testing!
