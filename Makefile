@@ -10,35 +10,53 @@
 #                                                                              #
 # **************************************************************************** #
 
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror
-SRCS = ft_isdigit.c ft_isprint.c ft_itoa.c ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_putchar_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_split.c ft_strchr.c ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c
+NONE = \033[0m
+GREEN = \033[32m
+YELLOW = \033[33m
+GRAY = \033[2;37m
+CURSIVE = \033[3m
+RED = \033[0;31m
 
-BONUS =  ft_lstmap.c ft_lstiter.c ft_lstclear.c ft_lstdelone.c ft_lstlast.c ft_lstsize.c ft_lstadd_front.c ft_lstnew.c ft_lstadd_back.c 
+CC = gcc
+
+CFLAGS = -Wall -Wextra -Werror
+
+SRCS = $(wildcard src/*.c) 
+
+BONUS = $(wildcard src/bonus/*.c)
+
+OBJDIR = src/obj_fdir
 
 OBJS = ${SRCS:.c=.o}
 
 OBJS_BONUS = ${BONUS:.c=.o}
 
 NAME = libft.a
-HEADER = libft.h
+HEADER = include
 
 %.o: %.c
-	$(CC) $(CLFAGS) -c $^ -o $@ -I $(HEADER)
+	@$(CC) $(CLFAGS) -c $^ -o $@ -I $(HEADER)
 
 ${NAME}: ${OBJS}
-	ar -rcs $@ $^
+	@ar -rcs $@ $^
+	@mkdir -p $(OBJDIR)
+	@mv src/*.o $(OBJDIR)
+	@echo " \n\t $(GREEN)The library is ready to use$(NONE) \n "
 
 all: ${NAME}
 
 bonus: ${OBJS_BONUS}
-	ar -rc ${NAME} $^
+	@ar -rc ${NAME} $^
+	@mv src/bonus/*.o $(OBJDIR)
+	@echo " \n\t $(GREEN)The bonus part of library is ready to use$(NONE) \n "
 
 clean:
-	rm -f ${OBJS}
-	rm -f ${OBJS_BONUS}
+	@rm -rf $(OBJDIR)
+	@echo " \n\t $(RED)The library is removed and all objects files$(NONE) \n "
 
 fclean:	clean
-	rm -f ${NAME} 
+	@rm -f ${NAME} 
 
 re: fclean all
+
+.PHONY: all fclean bonus clean re
