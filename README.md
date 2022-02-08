@@ -11,7 +11,7 @@ This project gives the opportunity to recode functions that already exist in dif
 
 # > About!
 
-<h3 style="text-align: center;">Mandatory Part</h3>
+<h3 align="center">Mandatory Part</h3>
 
 ## Functions from [![<ctype.h>](https://img.shields.io/badge/-%3Cctype.h%3E-blue)](https://devdocs.io/c/string/byte) library
 
