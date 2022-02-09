@@ -1,6 +1,6 @@
 
 <div align="center">
-<img src="https://gitlab.com/uploads/-/system/project/avatar/10815567/libft.png">
+<img width=400 hiegth=400 src="https://github.com/Mou-SED/LogosD/blob/master/LibftD.png">
 </div>
 
 <hr/>
