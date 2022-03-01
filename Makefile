@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: moseddik <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: moseddik <moseddik@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/21 20:18:19 by moseddik          #+#    #+#              #
-#    Updated: 2021/11/21 20:18:27 by moseddik         ###   ########.fr        #
+#    Updated: 2022/02/25 18:03:04 by moseddik         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 SRCS = $(wildcard src/*.c) 
 
-BONUS = $(wildcard src/bonus/*.c)
+BONUS = $(wildcard src/bonus/*/*.c)
 
 OBJDIR = src/obj_fdir
 
@@ -42,14 +42,14 @@ ${NAME}: ${OBJS}
 	@mkdir -p $(OBJDIR)
 	@mv src/*.o $(OBJDIR)
 	@echo " \n\t $(GREEN)The library is ready to use$(NONE) \n "
-
-all: ${NAME}
+	
+all: ${NAME} bonus
 
 bonus: ${OBJS_BONUS}
 	@ar -rc ${NAME} $^
-	@mv src/bonus/*.o $(OBJDIR)
+	@mv src/bonus/*/*.o $(OBJDIR)
 	@echo " \n\t $(GREEN)The bonus part of library is ready to use$(NONE) \n "
-
+	
 clean:
 	@rm -rf $(OBJDIR)
 	@echo " \n\t $(RED)The library is removed and all objects files$(NONE) \n "
