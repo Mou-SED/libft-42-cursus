@@ -66,15 +66,15 @@ This project gives the opportunity to recode functions that already exist in dif
 
 ## Linked list functions
 
-- [`ft_lstnew`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/ft_lstnew.c) ~ create new list.
-- [`ft_lstsize`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/ft_lstsize.c) ~ count elements of a list.
-- [`ft_lstlast`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/ft_lstlast.c) ~ find last element of list.
-- [`ft_lstadd_back`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/ft_lstadd_back.c) ~ add new element at end of list.
-- [`ft_lstadd_front`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/ft_lstadd_front.c) ~ add new element at beginning of list.
-- [`ft_lstdelone`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/ft_lstdelone.c) ~ delete element from list.
-- [`ft_lstclear`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/ft_lstclear.c) ~ delete sequence of elements of list from a starting point.
-- [`ft_lstiter`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/ft_lstiter.c) ~ apply function to content of all list's elements.
-- [`ft_lstmap`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/ft_lstmap.c) ~ apply function to content of all list's elements into new list.
+- [`ft_lstnew`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/single_linked_list/ft_lstnew.c) ~ create new list.
+- [`ft_lstsize`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/single_linked_list/ft_lstsize.c) ~ count elements of a list.
+- [`ft_lstlast`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/single_linked_list/ft_lstlast.c) ~ find last element of list.
+- [`ft_lstadd_back`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/single_linked_list/ft_lstadd_back.c) ~ add new element at end of list.
+- [`ft_lstadd_front`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/single_linked_list/ft_lstadd_front.c) ~ add new element at beginning of list.
+- [`ft_lstdelone`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/single_linked_list/ft_lstdelone.c) ~ delete element from list.
+- [`ft_lstclear`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/single_linked_list/ft_lstclear.c) ~ delete sequence of elements of list from a starting point.
+- [`ft_lstiter`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/single_linked_list/ft_lstiter.c) ~ apply function to content of all list's elements.
+- [`ft_lstmap`](https://github.com/Mou-SED/libft-42-cursus/blob/main/src/bonus/single_linked_list/ft_lstmap.c) ~ apply function to content of all list's elements into new list.
   
 # > Usage!
 
